@@ -30,7 +30,7 @@ You need a local or remote database with the type of
 
 ## Getting Started
 
-First, install al the essential npm packages:
+First, install all essential npm packages:
 
 ```bash
 npm install
