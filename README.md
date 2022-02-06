@@ -7,7 +7,7 @@ By [Tom Smits](https://github.com/teumaas)
 
 I built this for learning Next.js.
 
-**Demo**: [https://todo-app-ten-mauve.vercel.app/](https://todo-app-ten-mauve.vercel.app/)
+**Demo**: [https://todo-app-teumaas.vercel.app](https://todo-app-teumaas.vercel.app)
 
 ## Screenshots
 
