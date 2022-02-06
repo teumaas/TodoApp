@@ -1,6 +1,5 @@
 ## TodoApp
 
----
 
 This is a simple to todo app, built with [Next.js](https://github.com/vercel/next.js), [Prisma](https://github.com/prisma/prisma), [NextAuth.js](https://github.com/nextauthjs/next-auth) and [NextUI](https://github.com/nextui-org/nextui).
 By [Tom Smits](https://github.com/teumaas)
