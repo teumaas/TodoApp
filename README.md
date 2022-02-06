@@ -9,15 +9,15 @@ I built this for learning Next.js.
 
 ## Screenshots
 
-<img src="https://tomsmits.nl/assets/screen1.jpeg" width="600" height="327">
+<img src="https://tomsmits.nl/assets/screen1.jpeg" width="500" height="273">
 
-<img src="https://tomsmits.nl/assets/screen2.jpeg" width="600" height="327">
+<img src="https://tomsmits.nl/assets/screen2.jpeg" width="500" height="273">
 
-<img src="https://tomsmits.nl/assets/screen3.jpeg" width="600" height="327">
+<img src="https://tomsmits.nl/assets/screen3.jpeg" width="500" height="273">
 
-<img src="https://tomsmits.nl/assets/screen4.jpeg" width="600" height="327">
+<img src="https://tomsmits.nl/assets/screen4.jpeg" width="500" height="273">
 
-<img src="https://tomsmits.nl/assets/screen5.jpeg" width="600" height="327">
+<img src="https://tomsmits.nl/assets/screen5.jpeg" width="500" height="273">
 
 ## Requirement
 
