@@ -82,13 +82,13 @@ EMAIL_FROM=
 
 ```
 
-Fourth run the db push command to migrate the **schema.prisma**
+Fourth run the db push command to migrate the **schema.prisma**:
 
 ```bash
 npx prisma db push
 ```
 
-As last run
+As last run:
 
 ```bash
 npm run dev
