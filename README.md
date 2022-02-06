@@ -1,6 +1,5 @@
 ## TodoApp
 
-
 This is a simple to todo app, built with [Next.js](https://github.com/vercel/next.js), [Prisma](https://github.com/prisma/prisma), [NextAuth.js](https://github.com/nextauthjs/next-auth) and [NextUI](https://github.com/nextui-org/nextui).
 By [Tom Smits](https://github.com/teumaas)
 
@@ -9,8 +8,6 @@ I built this for learning Next.js.
 **Demo**: [https://todo-app-teumaas.vercel.app](https://todo-app-teumaas.vercel.app)
 
 ## Screenshots
-
----
 
 <img src="https://tomsmits.nl/assets/screen1.jpeg" width="800" height="437">
 
@@ -24,8 +21,6 @@ I built this for learning Next.js.
 
 ## Requirement
 
----
-
 You need a local or remote database with the type of
 
 - PostgreSQL
@@ -34,8 +29,6 @@ You need a local or remote database with the type of
 - MongoDB
 
 ## Getting Started
-
----
 
 First, install al the essential npm packages:
 
@@ -98,8 +91,6 @@ yarn run dev
 **Done!** Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Deploy on Vercel
-
----
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
