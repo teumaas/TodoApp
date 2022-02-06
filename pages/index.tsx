@@ -16,6 +16,7 @@ import {
   Modal,
   Input,
   Textarea,
+  Loading,
 } from "@nextui-org/react";
 
 import Head from "next/head";
@@ -52,11 +53,16 @@ const Home: NextPage<Props> = ({ items }: Props) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [visible, setVisible] = useState(false);
+  const [clickable, setClickable] = useState(true);
 
   const openHandler = () => {
+    setClickable(true);
     setVisible(true);
   };
   const closeHandler = () => {
+    setClickable(false);
+    setTitle("");
+    setDescription("");
     setVisible(false);
   };
 
@@ -69,8 +75,8 @@ const Home: NextPage<Props> = ({ items }: Props) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
-      await Router.push("/");
       closeHandler();
+      await Router.push("/");
     } catch (error) {}
   };
 
@@ -177,6 +183,7 @@ const Home: NextPage<Props> = ({ items }: Props) => {
               type="submit"
               size="md"
               onClick={postItem}
+              clickable={clickable}
               disabled={!description || !title}
               icon={<BiSave size="25px" />}
             >
