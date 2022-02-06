@@ -69,7 +69,7 @@ const Header: React.FC = () => {
         <Row justify="center">
           <Grid.Container gap={2} justify="center">
             <Grid xs={6} justify="flex-start">
-              <Text h3>{process.env.name}</Text>
+              <Text h3>{process.env.NEXT_PUBLIC_APP_NAME}</Text>
             </Grid>
             <Grid xs={3} justify="flex-end"></Grid>
             <Grid xs={3} justify="flex-end">

@@ -191,8 +191,11 @@ const Home: NextPage<Props> = ({ items }: Props) => {
   return (
     <div>
       <Head>
-        <title>{process.env.name}</title>
-        <meta name="description" content={process.env.description} />
+        <title>{process.env.NEXT_PUBLIC_APP_NAME}</title>
+        <meta
+          name="description"
+          content={process.env.NEXT_PUBLIC_APP_DESCRIPTION}
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header></Header>
