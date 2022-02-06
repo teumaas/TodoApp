@@ -133,6 +133,57 @@ const Home: NextPage<Props> = ({ items }: Props) => {
         >
           Add Item
         </Button>
+
+        <Modal
+          closeButton
+          blur
+          aria-labelledby="modal-title"
+          open={visible}
+          onClose={closeHandler}
+        >
+          <Modal.Header>
+            <Text id="modal-title" size={18}>
+              <Text b size={18}>
+                <Text>
+                  <BiNotepad /> Add Todo
+                </Text>
+              </Text>
+            </Text>
+          </Modal.Header>
+          <Modal.Body>
+            <Input
+              clearable
+              bordered
+              fullWidth
+              color="primary"
+              size="lg"
+              placeholder="Title"
+              onChange={(e) => setTitle(e.target.value)}
+            />
+            <Textarea
+              bordered
+              fullWidth
+              color="primary"
+              size="lg"
+              cols={50}
+              rows={8}
+              placeholder="Description"
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </Modal.Body>
+          <Modal.Footer justify="center">
+            <Button
+              rounded
+              type="submit"
+              size="md"
+              onClick={postItem}
+              disabled={!description || !title}
+              icon={<BiSave size="25px" />}
+            >
+              Add
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </>
     );
   }
@@ -150,56 +201,6 @@ const Home: NextPage<Props> = ({ items }: Props) => {
       </Grid.Container>
       <Grid.Container gap={6} justify="center">
         <Grid justify="center" alignItems="center">
-          <Modal
-            closeButton
-            blur
-            aria-labelledby="modal-title"
-            open={visible}
-            onClose={closeHandler}
-          >
-            <Modal.Header>
-              <Text id="modal-title" size={18}>
-                <Text b size={18}>
-                  <Text>
-                    <BiNotepad /> Add Todo
-                  </Text>
-                </Text>
-              </Text>
-            </Modal.Header>
-            <Modal.Body>
-              <Input
-                clearable
-                bordered
-                fullWidth
-                color="primary"
-                size="lg"
-                placeholder="Title"
-                onChange={(e) => setTitle(e.target.value)}
-              />
-              <Textarea
-                bordered
-                fullWidth
-                color="primary"
-                size="lg"
-                cols={50}
-                rows={8}
-                placeholder="Description"
-                onChange={(e) => setDescription(e.target.value)}
-              />
-            </Modal.Body>
-            <Modal.Footer justify="center">
-              <Button
-                rounded
-                type="submit"
-                size="md"
-                onClick={postItem}
-                disabled={!description || !title}
-                icon={<BiSave size="25px" />}
-              >
-                Add
-              </Button>
-            </Modal.Footer>
-          </Modal>
           {addButton}
         </Grid>
       </Grid.Container>

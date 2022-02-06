@@ -22,7 +22,7 @@ const TodoCard = ({ items }: Props) => {
   return (
     <>
       {items.map((item) => (
-        <Grid justify="flex-start" key={item.id} xs={6} md={4}>
+        <Grid justify="flex-start" key={item.id} md={4}>
           <Card hoverable shadow cover>
             <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
               <Col>
