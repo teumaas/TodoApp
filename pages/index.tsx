@@ -85,7 +85,7 @@ const Home: NextPage<Props> = ({ items }: Props) => {
           }}
           weight="bold"
         >
-          Welcome, login to use {process.env.name}
+          Welcome, login to use {process.env.NEXT_PUBLIC_APP_NAME}
         </Text>
         <Text
           h1
