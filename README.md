@@ -57,7 +57,7 @@ datasource db {
 
 Third set the values of **.env** file.
 
-```bash
+```shell
 # App
 NEXT_PUBLIC_APP_NAME="TodoApp"
 NEXT_PUBLIC_APP_DESCRIPTION="A simple To-Do webapp."
