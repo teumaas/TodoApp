@@ -47,7 +47,7 @@ datasource db {
 }
 ```
 
-Third set the values of **.env** file.
+Third rename the **example.env** file to **.env** and set the values.
 
 ```shell
 # App
@@ -58,12 +58,12 @@ NEXT_PUBLIC_APP_DESCRIPTION="A simple To-Do webapp."
 DATABASE_URL="engine://USERNAME:PASSWORD@URL:3306/DATABASE"
 
 # NEXT-AUTH
-SECRET="SECRECT KEY"
+SECRET="# Linux: `openssl rand -hex 32` or go to https://generate-secret.now.sh/32"
 NEXTAUTH_URL=URL/api/auth
 
 # OAuth
-GITHUB_CLIENT_SECRET=SECRECT KEY
-GITHUB_CLIENT_ID=CLIENT KEY
+GITHUB_CLIENT_SECRET=
+GITHUB_CLIENT_ID=
 
 # Nodemailer
 EMAIL_SERVER_USER=
